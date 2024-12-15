@@ -1,9 +1,12 @@
+'use client'; 
 import Head from 'next/head';
 import Image from 'next/image';
 import First from '../public/images/firstimage.jpeg';
 import Second from '../public/images/secondimage.jpeg';
 import Third from '../public/images/thirdimage.jpeg';
 import Fourth from '../public/images/fourthimage.jpeg';
+import Link from 'next/link';
+
 
 const products = [
   { image: First, name: 'The Dandy Chair', price: '£250' },
@@ -52,12 +55,14 @@ export default function Home() {
             ))}
           </div>
 
-          {/* View Collection Section */}
           <div className="text-center mt-12">
-            <button className="bg-gray-300 text-black px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              View Collection
-            </button>
-          </div>
+      <Link
+        href="/collection"
+        className="bg-gray-300 text-black px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        View Collection
+      </Link>
+    </div>
         </div>
       </main>
     </div>

@@ -4,6 +4,7 @@ import HeroCard from "@/components/HeroCard"
 import HeroProduct from "@/components/HeroProduct"
 import SmallIdea from "@/components/SmallIdea"
 import Footer from "@/components/Footer"
+import JoinClubSection from "@/components/JoinClub"
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <HeroCard/>
       <HeroProduct/>
       <SmallIdea/>
+      <JoinClubSection/>
     <Footer/>
  </div>
   )
